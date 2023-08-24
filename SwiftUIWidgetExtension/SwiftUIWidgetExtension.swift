@@ -180,7 +180,31 @@ let previewEntries = [
     SimpleEntry(date: .now, text: "Go confidently in the direction of your dreams! Live the life you've imagined.", type: .none)
 ]
 
-#Preview(as: .systemMedium, widget: {
+#Preview("accessoryInline", as: .accessoryInline) {
+    SwiftUIWidgetExtension()
+} timeline: {
+    previewEntries[0]
+    previewEntries[1]
+    previewEntries[2]
+}
+
+#Preview("accessoryRectangular", as: .accessoryRectangular) {
+    SwiftUIWidgetExtension()
+} timeline: {
+    previewEntries[0]
+    previewEntries[1]
+    previewEntries[2]
+}
+
+#Preview("systemSmall", as: .systemSmall) {
+    SwiftUIWidgetExtension()
+} timeline: {
+    previewEntries[0]
+    previewEntries[1]
+    previewEntries[2]
+}
+
+#Preview("medium", as: .systemMedium, widget: {
     SwiftUIWidgetExtension()
 }, timeline: {
     previewEntries[0]
@@ -188,7 +212,7 @@ let previewEntries = [
     previewEntries[2]
 })
 
-#Preview(as: .systemMedium) {
+#Preview("systemLarge", as: .systemLarge) {
     SwiftUIWidgetExtension()
 } timeline: {
     previewEntries[0]
@@ -196,39 +220,7 @@ let previewEntries = [
     previewEntries[2]
 }
 
-#Preview(as: .accessoryInline) {
-    SwiftUIWidgetExtension()
-} timeline: {
-    previewEntries[0]
-    previewEntries[1]
-    previewEntries[2]
-}
-
-#Preview(as: .accessoryRectangular) {
-    SwiftUIWidgetExtension()
-} timeline: {
-    previewEntries[0]
-    previewEntries[1]
-    previewEntries[2]
-}
-
-#Preview(as: .systemLarge) {
-    SwiftUIWidgetExtension()
-} timeline: {
-    previewEntries[0]
-    previewEntries[1]
-    previewEntries[2]
-}
-
-#Preview(as: .systemExtraLarge) {
-    SwiftUIWidgetExtension()
-} timeline: {
-    previewEntries[0]
-    previewEntries[1]
-    previewEntries[2]
-}
-
-#Preview(as: .systemSmall) {
+#Preview("systemExtraLarge", as: .systemExtraLarge) {
     SwiftUIWidgetExtension()
 } timeline: {
     previewEntries[0]
